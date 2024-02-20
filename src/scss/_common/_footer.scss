@@ -1,0 +1,21 @@
+// footer.scss
+@import '_variable';
+
+.footer {
+    background-color: #f8f8f8;
+
+    &__container {
+        margin: 0 auto;
+        max-width: 1140px;
+        display: flex;
+        padding-top: 50px;
+        height: 360px;
+        justify-content: space-between;
+    }
+
+    &__about {
+        margin-top: 16px;
+        width: 300px;
+        overflow-wrap: break-word;
+    }
+}

@@ -1,0 +1,64 @@
+// plan.scss
+@import './variable';
+
+.plan {
+    margin: 0 auto;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__card {
+        &:hover {
+            border: 2px solid red;
+            transform: scale(1.05);
+        }
+        transition: transform 0.3s ease;
+        border-radius: 10px;
+        border: 2px solid $border-color;
+        width: 330px;
+        height: 760px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: auto;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__btn {
+        &:hover {
+            box-shadow: 1px 15px 20px 10px rgb(255, 195, 195);
+            background-color: $primary-color;
+            color: #fff;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        color: $primary-color;
+        border: 2px solid red;
+        border-radius: 30px;
+        height: 45px;
+        width: 177px;
+        text-decoration: none;
+    }
+
+    &__img {
+        margin-top: 79px;
+    }
+}

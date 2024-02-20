@@ -1,0 +1,77 @@
+// comments.scss
+@import './variable';
+
+.comments {
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+
+    &__text {
+        margin-bottom: 50px;
+    }
+
+    &__slider {
+        width: 1140px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__container {
+        display: flex;
+        transition: transform 0.5s ease;
+
+        article {
+            width: 400px;
+            flex-shrink: 0;
+            margin-right: 50px;
+            border-radius: 10px;
+            border: 2px solid $border-color;
+
+            .down_text {
+                width: 340px;
+                text-align: center;
+                font-size: 16px;
+            }
+
+            .head_card {
+                width: 340px;
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-left: 30px;
+                }
+
+                &_text {
+                    margin: 0;
+                    margin-left: 20px;
+                }
+
+                &_rait {
+                    display: flex;
+                    margin-left: 105px;
+                }
+            }
+        }
+    }
+}
+
+.comments_control {
+    position: relative;
+    left: 50%;
+    bottom: -40px;
+    text-align: center;
+    justify-content: center;
+    transform: translateX(-50%);
+
+    button {
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+.active {
+    border-color: red !important;
+}
